@@ -39,12 +39,30 @@
       <optional>true</optional>
     </dependency>
 
-    <!-- OpenAPI-dependency ================================================================->
-    <! https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+    <!-- OpenAPI-dependency ================================================================ -->
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
       <version>1.6.11</version>
+    </dependency>
+
+    <!-- Database dependencies ============================================================ -->
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jdbc -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jdbc</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+
+    <!-- Test dependencies ========================================================================= -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>test</scope>
     </dependency>
 
 
@@ -54,6 +72,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
 
   <build>
     <plugins>
